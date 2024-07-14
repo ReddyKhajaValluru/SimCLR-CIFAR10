@@ -1,1 +1,1 @@
-NonSSLBaseline.ipynb contains the code for the base line model.
+nonsslbaseline.ipynb contains the code for the base line model.
