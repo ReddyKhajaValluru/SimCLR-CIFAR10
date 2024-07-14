@@ -48,6 +48,7 @@ I used the CIFAR-10 dataset for this project. The dataset contains 50,000 traini
   - Test accuracy: ~82% on the CIFAR-10 test set.
 
 ## Results and Conclusion
+![SimCLR Performance Comparison](https://github.com/ReddyKhajaValluru/SimCLR-CIFAR10/blob/main/SimCLR%20Performance%20Comparison.png)
 - **Performance Comparison:**
   - The baseline model achieved approximately 76% validation accuracy and a final loss of 0.46 after 20 epochs. In contrast, SimCLR achieved 76% validation accuracy and the same final loss of 0.46 in just 7 epochs, demonstrating its faster convergence and initial performance advantage over the baseline.
   - After 20 epochs, SimCLR further improved to approximately 82% validation accuracy and reduced the loss to 0.22. 
