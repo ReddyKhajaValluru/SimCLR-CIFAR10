@@ -18,7 +18,9 @@ I used the CIFAR-10 dataset for this project. The dataset contains 50,000 traini
   - **Optimizer:** Adam with initial LR of 0.0008.
   - **LR Schedule:** Exponential decay (gamma 0.9 for first 15 epochs, 0.6 after that).
   - **Loss Function:** Cross Entropy Loss.
-- **Performance:** Validation accuracy ~76%, final loss ~0.46 after 20 epochs.
+- **Performance:**
+  - Validation accuracy ~76%, final loss ~0.46 after 20 epochs.
+  - Test accuracy: ~76% on the CIFAR-10 test set.
 
 ## SimCLR Model
 ### SimCLR Pretraining
@@ -41,9 +43,11 @@ I used the CIFAR-10 dataset for this project. The dataset contains 50,000 traini
   - **Training Data:** Utilized only 30% of the CIFAR-10 training data (i.e., 15,000 samples).
   - **Cross-validation:** 5-fold.
   - **Epochs, Batch Size, Optimizer, LR, LR Schedule, Loss Function:** Same as non-SSL baseline model training.
-- **Performance:** Validation accuracy ~82%, final loss ~0.22 after 20 epochs.
+- **Performance:**
+  - Validation accuracy ~82%, final loss ~0.22 after 20 epochs.
+  - Test accuracy: ~82% on the CIFAR-10 test set.
 
 ## Results and Conclusion
 - **Performance Comparison:** 
-  - The baseline model achieved approximately 76% validation accuracy and a final loss of 0.46 after 20 epochs. In contrast, SimCLR achieved 76% validation accuracy and the same final loss of 0.46 in just 6 epochs, demonstrating its faster convergence and initial performance advantage over the baseline.
+  - The baseline model achieved approximately 76% validation accuracy and a final loss of 0.46 after 20 epochs. In contrast, SimCLR achieved 76% validation accuracy and the same final loss of 0.46 in just 7 epochs, demonstrating its faster convergence and initial performance advantage over the baseline.
   - After 20 epochs, SimCLR further improved to approximately 82% validation accuracy and reduced the loss to 0.22. These results underscore the effectiveness of contrastive learning in enhancing performance in scenarios with limited labeled data.
